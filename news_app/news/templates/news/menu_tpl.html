@@ -4,5 +4,7 @@
         {% for item in categories %}
         <li><a href="{{ item.get_absolute_url }}">{{ item.title }}</a></li>
         {% endfor %}
+        <li><a href="{% url 'terms_and_conditions' %}">Terms and Conditions</a></li>
+        <li><a href="{% url 'contact_page' %}">Contact</a></li>
     </ul>
 </div>

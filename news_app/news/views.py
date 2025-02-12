@@ -160,3 +160,9 @@ def add_comment(request, post_id):
     }
 
     return render(request, 'news/single.html', context)
+
+def terms_and_conditions(request):
+    return render(request, 'generic/terms_and_conditions.html')
+
+def contact_page(request):
+    return render(request, 'generic/contact.html')
