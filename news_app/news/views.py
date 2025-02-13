@@ -10,6 +10,7 @@ from django.core.validators import validate_email
 from django.core.exceptions import ValidationError
 from django.shortcuts import render, get_object_or_404
 from django.http import Http404
+from django.http import HttpResponse
 
 
 class Home(ListView):
@@ -166,3 +167,7 @@ def terms_and_conditions(request):
 
 def contact_page(request):
     return render(request, 'generic/contact.html')
+
+def ads_txt(request):
+    content = "google.com, pub-0000000000000000, DIRECT, pub-6143489334506942"
+    return HttpResponse(content, content_type="text/plain")
