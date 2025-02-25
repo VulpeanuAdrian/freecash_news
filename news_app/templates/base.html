@@ -1,16 +1,15 @@
-{% load static %}
-{% load cache %}
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <script type='text/javascript' src='//pl25967506.effectiveratecpm.com/6a/5b/c9/6a5bc964c2bda340ad8b26c57f8e5024.js'></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}News App{% endblock %}</title>
+    
+    <!-- Google AdSense (riscă să fie suspendat dacă ai pop-ups) -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6143489334506942"
      crossorigin="anonymous"></script>
+    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
@@ -33,6 +32,9 @@
         {% include 'inc/_footer.html' %}
         {% endcache %}
     </div>
+
+    <!-- Adsterra: Mutat înainte de </body> -->
+    <script type='text/javascript' src='//pl25967506.effectiveratecpm.com/6a/5b/c9/6a5bc964c2bda340ad8b26c57f8e5024.js'></script>
     
     <script src="{% static 'js/jquery-3.1.1.min.js'%}"></script>
     <script src="{% static 'js/bootstrap.min.js'%}"></script>
